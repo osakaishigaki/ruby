@@ -1,50 +1,29 @@
 class Menu
 	attr_accessor :name
 	attr_accessor :price
+	
+	# initializeメソッドを定義してください
+	def initialize
+	  self.name = "ピザ"
+	  self.price = 800
+	end
+	
+	
+	def info
+	  return "#{self.name} #{self.price}円"
+	end
+	
+	def get_total_price(count)
+	  total_price = self.price * count
+	  if count >= 3
+		total_price -= 100
+	  end
+	  return total_price
+	end
   end
   
   menu1 = Menu.new
   
-  menu1.name = "ピザ"
-  puts menu1.name
-  
-  # menu1のpriceに「800」を代入してください
-  menu1.price =800
-  class Menu
-	attr_accessor :name
-	attr_accessor :price
-  end
-  
-  menu1 = Menu.new
-  
-  menu1.name = "ピザ"
-  puts menu1.name
-  
-  menu1.price = 800
-  puts menu1.price
-  
-  # Menuクラスのインスタンスを生成して変数menu2に代入してください
-  menu2 = Menu.new
-  
-  menu2.name = "すし"
-  puts menu2.name
-  
-  menu2.price = 1000
-  puts menu2.price
-  
-  
-  # menu2のnameに「すし」を代入してください
-  
-  
-  # menu2のnameを出力してください
-  
-  
-  # menu2のpriceに「1000」を代入してください
-  
-  
-  # menu2のpriceを出力してください
-  
-  
-  # menu1のpriceを出力してください
-  puts menu1.price
+  # menu1に対してinfoメソッドを呼び出して戻り値を出力してください
+  puts menu1.info
   
