@@ -7,6 +7,7 @@ menu4 = Menu.new(name: "お茶", price: 200)
 
 menus = [menu1, menu2, menu3, menu4]
 
+
 # 変数indexを定義して「0」を代入してください
 index = 0
 
