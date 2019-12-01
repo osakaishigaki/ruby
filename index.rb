@@ -1,5 +1,5 @@
 characters = [
-  {name: "にんじゃわんこ", age: 14},
+  {name: "にaaaaんじゃわんこ", age: 14},
   {name: "ひつじ仙人"},
   {name: "ベイビーわんこ", age: 5},
   {name: "とりずきん"}
